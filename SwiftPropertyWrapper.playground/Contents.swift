@@ -42,7 +42,7 @@ print(rectangle.height) // 12
 
 // 被 property wrapper 声明的属性，实际上在存储时的类型是TwelveOrLess，
 // 只不过编译器施了一些魔法，让它对外暴露的类型依然是被包装的原来的类型。
-// 上面的 SmallRectangle 结构体，可以
+// 上面的 SmallRectangle 结构体，等同于下方这种写法
 /*
 struct SmallRectangle {
     private var _height = TwelveOrLess()
